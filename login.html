@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Вход — LightFrame Фотостудия</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background: #1e1e1e;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+ 
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: #1e1e1e;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- CLOSE BUTTON -->
+<a href="index.html" class="login-close" style="position:fixed;top:28px;left:28px;z-index:10;">
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+    <path d="M6 6L22 22M22 6L6 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</a>
+
+<!-- LOGIN CARD -->
+<div class="login-card" style="position:relative;z-index:1;">
+  <div class="login-card__logo">
+    <a href="index.html" class="logo">
+      <div class="logo__icon">
+        <img src="img/index/Group 25.png" alt="logo" width="180" height="40">
+      </div>
+    </a>
+  </div>
+
+  <h2 class="login-card__title">Введите номер<br>телефона</h2>
+  <p class="login-card__sub">Чтобы войти или зарегистрироваться</p>
+
+  <input type="tel" class="login-input" placeholder="+7 (000) 000 00 00" id="phoneInput">
+  <button class="login-btn" onclick="handleLogin()">Войти</button>
+
+  <a href="#" class="login-qr">ВХОД ПО QR-КОДУ</a>
+</div>
+
+<script>
+function handleLogin() {
+  const val = document.getElementById('phoneInput').value.trim();
+  if (val.length < 7) {
+    document.getElementById('phoneInput').style.borderColor = '#E63946';
+    return;
+  }
+  window.location.href = 'index.html';
+}
+document.getElementById('phoneInput').addEventListener('input', function() {
+  this.style.borderColor = '#555';
+});
+</script>
+</body>
+</html>

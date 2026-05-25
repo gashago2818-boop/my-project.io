@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Контакты — LightFrame Фотостудия</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo">
+      <div class="logo__icon">
+        <img src="img/index/Group 25.png" alt="logo" width="180" height="40">
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Главная</a>
+      <a href="services.html" class="nav__link">Услуги</a>
+      <a href="catalog.html" class="nav__link">Каталог</a>
+      <a href="about.html" class="nav__link">О нас</a>
+      <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <button class="header__search"><img src="img/Mask group.png" alt="lupa" width="20" height="20"></button>
+      <a href="login.html" class="btn btn--outline">Войти</a>
+      <a href="login.html" class="btn btn--red">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <p class="page-hero__breadcrumb"><a href="index.html">Главная</a> / <span>Контакты</span></p>
+</section>
+
+<section class="contacts-page">
+  <div class="container">
+    <div class="contacts-layout">
+
+      <!-- INFO -->
+      <div class="contacts-info">
+        <h2 class="contacts-info__title">Свяжитесь с нами</h2>
+        <div class="contacts-info__list">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <img src="img/index2/map.png" alt="map" width="23" height="23">
+            </div>
+            <div>
+              <p class="contact-item__label">Адрес</p>
+              <p class="contact-item__value">г. Тюмень, ул. Луначарского, д. 19</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <img src="img/contact/mail.png" alt="mail" width="23" height="23">
+            </div>
+            <div>
+              <p class="contact-item__label">Email</p>
+              <p class="contact-item__value"><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <img src="img/contact/phone.png" alt="phone" width="23" height="23">
+            </div>
+            <div>
+              <p class="contact-item__label">Телефон</p>
+              <p class="contact-item__value"><a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <img src="img/index2/time.png" alt="time" width="23" height="23">
+            </div>
+            <div>
+              <p class="contact-item__label">График работы</p>
+              <p class="contact-item__value">Пн–Пт: 10:00 – 19:00<br>Сб–Вс: 10:00 – 17:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-grid">
+          <div class="schedule-card">
+            <p class="schedule-card__day">Пн – Пт</p>
+            <p class="schedule-card__time">10:00 – 19:00</p>
+          </div>
+          <div class="schedule-card">
+            <p class="schedule-card__day">Суббота</p>
+            <p class="schedule-card__time">10:00 – 17:00</p>
+          </div>
+          <div class="schedule-card">
+            <p class="schedule-card__day">Воскресенье</p>
+            <p class="schedule-card__time">Выходной</p>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;">
+          <h4 style="font-family:var(--font-main);font-size:15px;font-weight:700;margin-bottom:14px;">Мы в социальных сетях</h4>
+          <div style="display:flex;gap:12px;">
+            <a href="#" class="footer__social" style="background:#1a1a1a;">Instagram</a>
+            <a href="#" class="footer__social" style="background:#1a1a1a;">Telegtam</a>
+            <a href="#" class="footer__social" style="background:#1a1a1a;">YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contacts-form">
+        <h3 class="contacts-form__title">Написать нам</h3>
+        <div class="form-group">
+          <label>Ваше имя</label>
+          <input type="text" class="form-control" placeholder="Иван Иванов">
+        </div>
+        <div class="form-group">
+          <label>Телефон</label>
+          <input type="tel" class="form-control" placeholder="+7 (000) 000-00-00">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="example@mail.ru">
+        </div>
+        <div class="form-group">
+          <label>Тема обращения</label>
+          <select class="form-control">
+            <option>Запись на съёмку</option>
+            <option>Аренда зала</option>
+            <option>Вопрос по услугам</option>
+            <option>Сотрудничество</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Сообщение</label>
+          <textarea class="form-control" placeholder="Расскажите, чем мы можем вам помочь..."></textarea>
+        </div>
+        <button class="btn btn--red" style="width:100%;padding:14px;">Отправить сообщение</button>
+        <p style="font-size:12px;color:#999;margin-top:12px;line-height:1.5;">Нажимая кнопку, вы соглашаетесь с <a href="#" style="color:var(--red);">политикой конфиденциальности</a></p>
+      </div>
+    </div>
+
+    <!-- MAP PLACEHOLDER -->
+    <div class="contacts-map">
+      <div class="contacts-map__placeholder">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3ACPgwQUip&width=100%&height=100%&lang=ru_RU&scroll=true"
+          width="100%"
+          height="100%"
+          style="border: 0;"
+          loading="lazy"
+          title="Карта: г. Тюмень, ул. Луначарского, д. 19"
+          allowfullscreen >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- baner -->
+<section class="brands">
+  <div class="container-baner">
+    <div class="brands__row">
+      <img src="img/index/sponsor2.png" alt="sponsor">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="logo logo--white">
+          <div class="logo__icon"><img src="img/index/Group 25.png" alt="logo" width="180" height="40"></div>
+        </a>
+        <p class="footer__tagline">Мы в соцсетях</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social">ВК</a>
+          <a href="#" class="footer__social">ТТ</a>
+          <a href="#" class="footer__social">ЮТ</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Навигация</h4>
+        <div class="footer__divider"></div>
+        <nav class="footer__nav">
+          <a href="index.html">Главная</a>
+          <a href="services.html">Услуги</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Контакты</h4>
+        <div class="footer__divider"></div>
+        <div class="footer__contacts">
+          <p>г. Тюмень, ул. Луначарского, д. 19</p>
+          <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+          <a href="mailto:info@gmail.com">info@gmail.com</a>
+          <p>Пн–Пт: 10:00 – 19:00</p>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Будь в курсе</h4>
+        <div class="footer__divider"></div>
+        <p class="footer__newsletter-desc">Подпишись на новости о мероприятиях и добрых делах</p>
+        <div class="footer__newsletter">
+          <input type="email" placeholder="Твоя почта" class="footer__input">
+          <button class="btn btn--red footer__subscribe">ПОДПИСАТЬСЯ</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Фотостудия. Все права защищены.</span>
+      <div class="footer__bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+        <a href="#" class="btn btn--red btn--xs">Наверх</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

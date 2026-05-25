@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>LightFrame — Фотостудия</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- hero -->
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo">
+      <div class="logo__icon">
+        <img src="img/index/Group 25.png" alt="logo" width="180" height="40">
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link nav__link--active">Главная</a>
+      <a href="services.html" class="nav__link">Услуги</a>
+      <a href="catalog.html" class="nav__link">Каталог</a>
+      <a href="about.html" class="nav__link">О нас</a>
+      <a href="contacts.html" class="nav__link">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <button class="header__search" aria-label="Поиск">
+        <img src="img/Mask group.png" alt="lupa" width="20" height="20">
+      </button>
+      <a href="login.html" class="btn btn--outline">Войти</a>
+      <a href="login.html" class="btn btn--red">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<!-- hero slider -->
+<section class="hero">
+  <div class="hero__slide hero__slide--active">
+    <img src="img/image 2.png" alt="fon"fon> 
+    <!-- hero__bg -->
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">ПРОФЕССИОНАЛЬНАЯ ФОТОСТУДИЯ</p>
+      <h1 class="hero__title">Сохраним важне<br> моменты вашей <span class="hero__title--red">жизни.</span></h1>
+      <p class="hero__desc">Портреты, семейные, свадебные и коммерческие<br>фотосессии в нашей современной студии</p>
+      <div class="hero__btns">
+        <a href="login.html" class="btn btn--red">Записаться на съёмку</a>
+        <a href="catalog.html" class="btn btn--outline-white">Смотреть работы</a>
+      </div>
+    </div>
+  </div>
+  <button class="hero__arrow hero__arrow--prev">&#8249;</button>
+  <button class="hero__arrow hero__arrow--next">&#8250;</button>
+  <div class="hero__dots">
+    <span class="hero__dot hero__dot--active"></span>
+    <span class="hero__dot"></span>
+    <span class="hero__dot"></span>
+  </div>
+  <div class="hero__social">
+    <img src="img/index/ins.png" alt="ins">
+    <img src="img/index/vk.png" alt="vk">
+    <img src="img/index/tg.png" alt="tg">
+  </div>
+</section>
+
+<!-- search bar -->
+<section class="search-bar">
+  <div class="container">
+    <div class="search-bar__inner">
+      <img src="img/Mask group.png" alt="lupa" width="35" height="35">
+      <input type="text" class="search-bar__input" 
+      placeholder="Быстрый поиск по жанру&#10;Например: портрет, love story, семейная...">
+      <button class="btn btn--red">Найти</button>
+    </div>
+  </div>
+</section>
+
+<!-- features -->
+<section class="features">
+  <div class="container">
+    <div class="features__grid">
+      <div class="feature">
+        <div class="feature__icon feature__icon--pink">
+          <img src="img/cash.png" alt="logo" width="30" height="30">
+        </div>
+        <div>
+          <h3 class="feature__title">Привлекательные цены</h3>
+          <p class="feature__desc">Оптимальное соотношение цены и качества</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__icon feature__icon--pink">
+          <img src="img/cash.png" alt="logo" width="30" height="30">
+        </div>
+        <div>
+          <h3 class="feature__title">Ежемесячные акции</h3>
+          <p class="feature__desc">Регулярные скидки и специальные предложения для вас</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__icon feature__icon--pink">
+          <img src="img/soud.png" alt="soud" width="30" height="30">
+        </div>
+        <div>
+          <h3 class="feature__title">Круглосуточная поддержка</h3>
+          <p class="feature__desc">Мы на связи 24/7 и готовы ответить на ваши вопросы</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- popul servis -->
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">Популярные услуги</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="img/index/slid1.png" alt="slid1">
+        <div class="service-card__body">
+          <h4 class="service-card__name">Портретная съёмка</h4>
+          <div class="service-card__stars">★★★★★</div>
+          <div class="service-card__price"><span class="price--red">3599 ₽</span> <span class="price--old">3999 ₽</span></div>
+          <button class="btn btn--outline-sm">В каталог</button>
+        </div>
+      </div>
+      <div class="service-card">
+      <img src="img/index/slid1.png" alt="slid1">
+        <div class="service-card__body">
+          <h4 class="service-card__name">love story</h4>
+          <div class="service-card__stars">★★★★★</div>
+          <div class="service-card__price"><span class="price--red">3599 ₽</span> <span class="price--old">3999 ₽</span></div>
+          <button class="btn btn--outline-sm">В каталог</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="img/index/slid1.png" alt="slid1">
+        <div class="service-card__body">
+          <h4 class="service-card__name">Семейная съёмка</h4>
+          <div class="service-card__stars">★★★★★</div>
+          <div class="service-card__price"><span class="price--red">2699 ₽</span> <span class="price--old">3999 ₽</span></div>
+          <button class="btn btn--outline-sm">В каталог</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="img/index/slid1.png" alt="slid1">
+        <div class="service-card__body">
+          <h4 class="service-card__name">Fashion съёмка</h4>
+          <div class="service-card__stars">★★★★★</div>
+          <div class="service-card__price"><span class="price--red">5699 ₽</span> <span class="price--old">3999 ₽</span></div>
+          <button class="btn btn--outline-sm">В каталог</button>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="img/index/slid1.png" alt="slid1">
+        <div class="service-card__body">
+          <h4 class="service-card__name">Бизнес-портрет</h4>
+          <div class="service-card__stars">★★★★★</div>
+          <div class="service-card__price"><span class="price--red">2699 ₽</span> <span class="price--old">3999 ₽</span></div>
+          <button class="btn btn--outline-sm">В каталог</button>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="catalog.html" class="btn btn--outline-dark">Перейти в каталог</a>
+    </div>
+  </div>
+</section>
+
+<!-- popular halls -->
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">Популярные залы</h2>
+    <div class="halls-grid">
+      <div class="hall-card">
+        <div class="hall-card__img"><img src="img/index/zal1.png" alt="zal1">
+          <div class="hall-card__overlay">
+            <div class="hall-card__content">
+              <div class="hall-card__info">
+                <h3 class="hall-card__name">BOHO HALL</h3>
+                <p class="hall-card__size">60 м² · от 3499 ₽/час</p>
+              </div>
+              <button class="btn btn--sm-white">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hall-card">
+        <div class="hall-card__img">
+          <img src="img/index/zal1.png" alt="zal1">
+          <div class="hall-card__overlay">
+            <div class="hall-card__content">
+              <div class="hall-card__info">
+                <h3 class="hall-card__name">WHITE HALL</h3>
+                <p class="hall-card__size">50 м² · от 2499 ₽/час</p>
+              </div>
+              <button class="btn btn--sm-white">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hall-card">
+        <div class="hall-card__img">
+          <img src="img/index/zal1.png" alt="zal1">
+          <div class="hall-card__overlay">
+            <div class="hall-card__content">
+              <div class="hall-card__info">
+                <h3 class="hall-card__name">PINK ROOM</h3>
+                <p class="hall-card__size">27 м² · от 6299 ₽/час</p>
+              </div>
+              <button class="btn btn--sm-white">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- partners -->
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">Наши партнёры</h2>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <div class="partner-card__img">
+          <img src="img/index/cr7.png" alt="cr7">
+        </div>
+        <div class="partner-card__body">
+          <h4 class="partner-card__name">Анна Воровская</h4>
+          <p class="partner-card__role">Визажист</p>
+          <p class="partner-card__price">от 3599 ₽</p>
+          <button class="btn btn--outline-sm">Подробнее</button>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-card__img">
+          <img src="img/index/cr7.png" alt="cr7">
+        </div>
+        <div class="partner-card__body">
+          <h4 class="partner-card__name">Екатерина Оперская</h4>
+          <p class="partner-card__role">Стилист</p>
+          <p class="partner-card__price">от 3899 ₽</p>
+          <button class="btn btn--outline-sm">Подробнее</button>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-card__img">
+          <img src="img/index/cr7.png" alt="cr7">
+        </div>
+        <div class="partner-card__body">
+          <h4 class="partner-card__name">Игорь Синяк</h4>
+          <p class="partner-card__role">Стилист</p>
+          <p class="partner-card__price">от 3399 ₽</p>
+          <button class="btn btn--outline-sm">Подробнее</button>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-card__img">
+          <img src="img/index/cr7.png" alt="cr7">
+        </div>
+        <div class="partner-card__body">
+          <h4 class="partner-card__name">Владимир Косяк</h4>
+          <p class="partner-card__role">Парикмахер</p>
+          <p class="partner-card__price">от 4399 ₽</p>
+          <button class="btn btn--outline-sm">Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- baner -->
+<section class="brands">
+  <div class="container-baner">
+    <div class="brands__row">
+      <img src="img/index/sponsor2.png" alt="sponsor">
+    </div>
+  </div>
+</section>
+
+<!-- podal -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="logo logo--white">
+          <div class="logo__icon">
+            <img src="img/index/Group 25.png" alt="logo" width="180" height="40">
+          </div>
+        </a>
+        <p class="footer__tagline">Мы в соцсетях</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social">ВК</a>
+          <a href="#" class="footer__social">ТТ</a>
+          <a href="#" class="footer__social">ЮТ</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Навигация</h4>
+        <div class="footer__divider"></div>
+        <nav class="footer__nav">
+          <a href="index.html">Главная</a>
+          <a href="services.html">Услуги</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Контакты</h4>
+        <div class="footer__divider"></div>
+        <div class="footer__contacts">
+          <p>г. Тюмень, ул. Луначарского, д. 19</p>
+          <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+          <a href="mailto:info@gmail.com">info@gmail.com</a>
+          <p>Пн–Пт: 10:00 – 19:00</p>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Будь в курсе</h4>
+        <div class="footer__divider"></div>
+        <p class="footer__newsletter-desc">Подпишись на новости о мероприятиях и добрых делах</p>
+        <div class="footer__newsletter">
+          <input type="email" placeholder="Твоя почта" class="footer__input">
+          <button class="btn btn--red footer__subscribe">ПОДПИСАТЬСЯ</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Фотостудия. Все права защищены.</span>
+      <div class="footer__bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+        <a href="#" class="btn btn--red btn--xs">Наверх</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
